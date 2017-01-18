@@ -19,8 +19,10 @@
     border-radius: 20px;
 }
 
-header {
+#home {
     background-image: url('../img/frenchie.jpg');
+    width: 100%;
+    size: cover;
 }
 
 .btn-xl {
@@ -379,6 +381,33 @@ ul.social-buttons li a:active {
 
 .screen-sm-clear {
     clear: left;
+}
+
+#search {
+    background-image: url('../img/bordeaux.jpg');
+    width: 100%;
+    size: cover;
+}
+
+#search-state {
+    padding: 10%;
+    /*margin: 0 auto;*/
+    background-color: #eeeeee;
+}
+
+/*#search-distance {
+    padding: 10%;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}*/
+
+#map {
+    margin: 0 auto;
+    display: block;
+}
+
+#results {
+    
 }
 
 @media (min-width: 768px) {

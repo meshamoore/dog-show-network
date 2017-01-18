@@ -25,9 +25,6 @@ doc.css('.infinitescroll').each do |parent|
         name = line.children.first.children.first.text
         info = line.children[1].text
 
-        # puts name
-        # puts info
-
         parts = info.gsub("\n", '').slice(2..info.length).split(', ')
         location_parts = parts[0].split(' ')
         state = location_parts.last
@@ -35,6 +32,8 @@ doc.css('.infinitescroll').each do |parent|
         city = location_parts.join(' ')
         year = parts[-1]
         month_day = parts[-2]
+
+        # Could use Time.parse instead of split
         month = month_day.split(' ')[0]
         day = month_day.split(' ')[1]
         # puts parts.inspect
@@ -48,7 +47,6 @@ doc.css('.infinitescroll').each do |parent|
             month: month,
             day: day
         })
-        
     end
 
     # links = child.next_element.css('a')
@@ -63,7 +61,6 @@ end
 
 shows.each do |show|
   puts show.inspect
-
-    # Date::MONTHNAMES.index("June")
-    # Time.new(year, month, day, hours, minutes, seconds)
+# Date::MONTHNAMES.index("June")
+# Time.new(year, month, day, hours, minutes, seconds)
 end
