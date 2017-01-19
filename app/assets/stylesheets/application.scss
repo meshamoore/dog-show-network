@@ -309,7 +309,7 @@ fieldset[disabled] .btn-service.active {
 }
 
 #team {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -408,7 +408,7 @@ ul.social-buttons li a:active {
 
 #results {
     background-color: #eeeeee;
-    
+
     h2 {
         font-size: 18px;
         font-family: 'Special Elite', cursive;
@@ -422,6 +422,19 @@ ul.social-buttons li a:active {
         font-family: 'Nixie One', cursive;
     }
 }
+
+::-moz-selection {
+  background: #ffae19;
+}
+
+::selection {
+  background: #ffae19;
+}
+
+body {
+  webkit-tap-highlight-color: #ffae19;
+}
+
 
 @media (min-width: 768px) {
     .navbar-custom .navbar-nav > .active > a {
@@ -496,4 +509,12 @@ ul.social-buttons li a:active {
     #hound {
         padding: 16px;
     }
+}
+
+.navbar-custom.affix-top {
+    background-color: transparent;
+}
+
+section h3.section-subheading {
+    margin-bottom: 60px;
 }
