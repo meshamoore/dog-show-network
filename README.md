@@ -1,24 +1,10 @@
-# README
+# Dog Show Network
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+View, search, and enter any dog show in the U.S. by state, distance, closing date, or superintendent.
 
-Things you may want to cover:
+There are no seeds because we scrape dog show sites to find upcoming shows.
 
-* Ruby version
+## Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `rake db:migrate`
+1. `rake scrape:onofrio` (import shows)
