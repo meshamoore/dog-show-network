@@ -5,5 +5,7 @@ class PagesController < ApplicationController
 
   def search
     @title = 'search shows'
+    @shows = Show.all
   end
+
 end

@@ -407,7 +407,20 @@ ul.social-buttons li a:active {
 }
 
 #results {
+    background-color: #eeeeee;
     
+    h2 {
+        font-size: 18px;
+        font-family: 'Special Elite', cursive;
+    }
+
+    span {
+        display: block;
+    }
+
+    .location, .date, .sup {
+        font-family: 'Nixie One', cursive;
+    }
 }
 
 @media (min-width: 768px) {

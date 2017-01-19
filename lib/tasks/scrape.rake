@@ -4,6 +4,8 @@ namespace :scrape do
   desc "Scrape dog show sites for events"
 
   task onofrio: :environment do
+    Show.destroy_all
+
     scraper = Scraper::Onofrio.new
     shows = scraper.scrape
     shows.each do |show|

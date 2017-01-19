@@ -44,59 +44,29 @@
 </header>
 
 <div id="results">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
+    <div class="container">        
+        <% count = 0 %>
+        <% @shows.each do |show| %>
+            <% if count == 0  %>
+                <div class="row">
+            <% end %>
+            <% count = count + 1 %>
+                <div class="col-md-4">
+                    <h2><%= show.name %></h2>
+                    <div class="details">
+                        <span class="location"><%= show.city %>, <%= show.state %></span>
+                        <span class="date"><%= show.show_date %></span>
+                        <span class="sup"><%= show.superintendent %></span>
+                    </div>
                 </div>
+            <% if count == 3 %>
+                <% count = 0 %>
+                </div> <!-- .row -->
+            <% end %>
+        <% end %>
+        <% if @shows.count % 3 != 0 %>
             </div>
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h2>Show Name Show Name Show Name Show Name</h2>
-                <div class="details">
-                    <span class="location">Austin, TX</span>
-                    <span class="date">Monday January 23rd, 2017</span>
-                    <span class="sup">Superintedent</span>
-                </div>
-            </div>
-        </div>    
+        <% end %>
     </div>
 </div>
 
