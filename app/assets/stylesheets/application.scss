@@ -180,8 +180,12 @@ p {
     font-family: 'Nixie One', cursive;
 }
 
+#services {
+  padding-top: 220px;
+}
+
 .btn-super {
-    color: #000;
+    color: #333333;
     background-color: #ffa500;
     border-color: #ffa500;
     font-family: 'Special Elite', cursive;
@@ -309,7 +313,7 @@ fieldset[disabled] .btn-service.active {
 }
 
 #team {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -327,6 +331,7 @@ section#contact {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  padding-top: 200px;
 }
 
 .contact-text {
